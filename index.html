@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Component</title>
+</head>
+
+<body>
+    <div class="outer-div">
+        <section class="comments-component">
+            <section class="top-section">
+                <div class="comments-div">
+                    <h2 class="title">Comments</h2>
+                    <button class="colored-counter">20+</button>
+                    <span class="on">on</span>
+                    <a class="link-on-comments" href="#">How Great User Experience Design (UX) Can Grow Your Bus..</a>
+                </div>
+                <section class="social-media">
+                    <a id="" class="link-socials active tri-down" href="#">WordPress</a>
+                    <a class="link-socials" href="#">Facebook</a>
+                    <a class="link-socials" href="#">Tweets</a>
+                    <div class="back-to-top">
+                        <button class="colored-button">
+                            <i class="fa fa-angle-up"></i>
+                        </button>
+                        <h4 class="back-title">Back to top</h4>
+                    </div>
+                </section>
+            </section>
+            <!-- <div class="hr"></div> -->
+            <section class="admin-section">
+                <img class="devrix-img" src="./images/devrix.jpg">
+                <div class="admin-info">
+                    <h3 class="admin-title">Administrator</h3>
+                    <p class="date">-- 13th June 2015 - 14:25</p>
+                </div>
+                <textarea class="comment-area" type="text" cols="120" rows="4" placeholder="Start typing here to leave your comment ..."></textarea>
+                <div class="tags">
+                    <button class="add-tag">add tags</button>
+                    <textarea class="tags-area" type="text" cols="40" rows="1" placeholder="You can tag your comments!"></textarea>
+                    <button class="cancel-button">Cancel</button>
+                    <button class="publish-button">Publish</button>
+                </div>
+            </section>
+            <hr class="line-hr">
+        </section>
+        <section class="order-type">
+            <span>ORDER:</span>
+            <a href="#" class="on">TOP RATED</a>
+            <a href="#" class="off">NEWEST FIRST</a>
+            <a href="#" class="off">OLDEST FIRST</a>
+        </section>
+        <section class="comments">
+            <div class="vote">
+                <i class="fa fa-caret-up fa-4x vote-up on"></i>
+                <span class="vote-count">457</span>
+                <i class="fa fa-caret-down fa-4x vote-down off"></i>
+            </div>
+            <div class="current-comment">
+                <img class="comment-image" src="./images/panda.png">
+                <div class="username-info">
+                    <h3 class="username">username2452</h3>
+                    <p class="date">-- 13th June 2015 - 14:25</p>
+                </div>
+                <div class="comment-content">
+                    <p>Some fifty years ago there was a curious case of whale-tover litigrated in England, wherein the plantiffs
+                        set fort that after a hard chase of a whale in the Northen seas;
+                    </p>
+                    <p>When indeed they (the plantiffs) had succeeded in harpoining the fish; they were at last, through peril
+                        of their lives, obliged to forsake not only their lines, but their boat itself. Ultimately they defendants
+                        (the crew of another ship) came up with the whale, struck, killed,
+                    </p>
+                </div>
+                <div class="comment-tags">
+                    <button class="colored-tag">suggestion</button>
+                    <button class="colored-tag">tag</button>
+                    <div class="links">
+                        <a href="#" class="off">PERMALINK</a>
+                        <a href="#" class="off">PERORT</a>
+                        <a href="#" class="on">REPLY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $('.link-socials').on('click', function () {
+            $('.link-socials').each(function () {
+                $(this).removeClass('active tri-down')
+            });
+            $(this).addClass('active tri-down');
+        });
+    });
+</script>
+
+</html>
