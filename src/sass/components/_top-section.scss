@@ -10,7 +10,7 @@ body {
             display: inline;
         }
         .colored-counter {
-            background-color: #2e62d3;
+            background-color: #3399ff;
             color: white;
             border: none;
             text-align: center;
@@ -26,74 +26,146 @@ body {
             color: #a7a6a6;
         }
         .link-on-comments {
+            letter-spacing: 0.2px;
             font-size: 20px;
             font-style: italic;
             display: contents;
-            color: #2e62d3;
+            color: #3399ff;
         }
     }
     .social-media {
         border-bottom: 1px solid #ddd;
-        .link-socials {
-            text-decoration: none;
-            display: inline;
-            margin-left: 20px;
-            color: black;
-            &.active {
-                color: #2e62d3;
+        .social-media-links {
+            .link-socials {
                 text-decoration: none;
-                display: inline-block;
-                outline: 0;
+                display: inline;
                 margin-left: 20px;
+                margin-right: 20px;
+                color: black; // left: 0;
+                // -webkit-transition: all 1.5s ease-in-out;
+                // -moz-transition: all 1.5s ease-in-out;
+                // -o-transition: all 1.5s ease-in-out;
+                // transition: all 1.5s ease-in-out;
+                // position: relative;
+                // &:hover {
+                //     left: 20px;
+                //     padding-left: -20px;
+                // }
+                &.active {
+                    // transition: all 1s ease-in-out;
+                    color: #3399ff;
+                    text-decoration: none;
+                    display: inline-block;
+                    outline: 0;
+                    margin-left: 20px; // transition: all 1s ease-in-out;
+                }
+                &.tri-down {
+                    /* Styling block element, not required */
+                    position: relative;
+                    padding-bottom: 15px;
+                }
+                /* Required for Down Triangle */
+                &.tri-down:before,
+                &.tri-down:after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-color: transparent;
+                    border-bottom: 0;
+                }
+                /* Stroke */
+                &.tri-down:before {
+                    bottom: -16px;
+                    left: 21px;
+                    /* If 1px darken stroke slightly */
+                    border-top-color: #d6d4d4;
+                    border-width: 16px;
+                }
+                /* Fill */
+                &.tri-down:after {
+                    bottom: -15px;
+                    left: 22px;
+                    border-top-color: #fff;
+                    border-width: 15px;
+                }
             }
-            &.tri-down {
-                /* Styling block element, not required */
-                position: relative;
-                padding-bottom: 15px;
-            }
-            /* Required for Down Triangle */
-            &.tri-down:before,
-            &.tri-down:after {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-color: transparent;
-                border-bottom: 0;
-            }
-            /* Stroke */
-            &.tri-down:before {
-                bottom: -16px;
-                left: 21px;
-                /* If 1px darken stroke slightly */
-                border-top-color: #d6d4d4;
-                border-width: 16px;
-            }
-            /* Fill */
-            &.tri-down:after {
-                bottom: -15px;
-                left: 22px;
-                border-top-color: #fff;
-                border-width: 15px;
-            }
+        }
+        .link-socials.tri-down:before:hover,
+        .link-socials.tri-down:after:hover {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom: 0;
+        }
+        /* Stroke */
+        .link-socials.tri-down:before:hover {
+            bottom: -16px;
+            left: 21px;
+            /* If 1px darken stroke slightly */
+            border-top-color: #d6d4d4;
+            border-width: 16px;
+        }
+        /* Fill */
+        .link-socials.tri-down:after:hover {
+            bottom: -15px;
+            left: 22px;
+            border-top-color: #fff;
+            border-width: 15px;
         }
     }
 }
 
 .back-to-top {
-    display: inline;
-    margin-left: 300px;
+    float: right;
+    margin-top: -30px;
     .colored-button {
-        background-color: #2e62d3;
+        background-color: #3399ff;
         color: white;
         border: none;
         font-size: 20px;
         border-radius: 3px;
-        height: 25px;
-        margin-left: 10px;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        padding: 0;
     }
     .back-title {
         display: inline;
     }
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .top-section {
+        width: auto;
+        .social-media {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            .social-media-links {
+                -webkit-order: 3;
+                -ms-order: 3;
+                order: 3;
+            }
+            .back-to-top {
+                margin-left: 200px;
+                margin-bottom: 15px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
 }

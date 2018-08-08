@@ -17,6 +17,8 @@
         }
     }
     .comment-area {
+        color: #9c9c9c;
+        font-family: sans-serif;
         border: none;
         margin-top: 20px;
         margin-left: 100px;
@@ -24,17 +26,24 @@
     .tags {
         margin-left: 100px;
         .add-tag {
-            background-color: #e6e3e3;
-            color: #7a7878;
+            font-family: sans-serif;
+            font-style: oblique;
+            background-color: #f2efef;
+            color: #b1a7a7;
             border: none;
             border-radius: 3px;
             height: 25px;
         }
         .tags-area {
+            color: #c0c0c0;
+            font-family: sans-serif;
+            font-style: oblique;
+            font-size: 15px;
             border: none;
             margin-left: 30px;
         }
         .cancel-button {
+            font-weight: bold;
             background-color: Transparent;
             background-repeat: no-repeat;
             border: none;
@@ -44,14 +53,44 @@
             color: #a7a6a6;
             border: none;
             margin-right: 30px;
-            margin-left: 280px;
         }
         .publish-button {
-            background-color: #e6e3e3;
-            color: #7a7878;
+            font-weight: bold;
+            background-color: #f2efef;
+            color: #b1a7a7;
             border: none;
             padding: 8px;
             border-radius: 3px;
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .admin-section {
+        width: auto;
+        .admin-info {
+            width: auto;
+        }
+        .comment-area {
+            font-weight: 100;
+            width: 70%;
+        }
+        .tags {
+            .tags-area {
+                width: 90%;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            .cancel-button {
+                width: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
 }

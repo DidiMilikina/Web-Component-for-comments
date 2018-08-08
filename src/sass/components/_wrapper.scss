@@ -3,3 +3,15 @@
     margin: auto;
     margin-top: 100px;
 }
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .outer-div {
+        width: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
+}

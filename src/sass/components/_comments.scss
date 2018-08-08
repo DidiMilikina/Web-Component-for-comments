@@ -3,19 +3,22 @@
     .vote {
         display: inline;
         .vote-up {
+            margin-left: 5px;
             height: 30px;
             &.on {
-                color: #2e62d3;
+                color: #3399ff;
             }
         }
         .vote-count {
-            margin: 8px 0;
+            margin-left: 5px;
+            font-size: 25px;
             display: block;
             box-sizing: inherit;
             text-align: center;
             width: 40px;
         }
         .vote-down {
+            margin-left: 5px;
             margin-top: -10px;
             &.off {
                 color: #d6d4d4;
@@ -23,16 +26,14 @@
         }
     }
     .current-comment {
-        margin-top: -120px;
+        margin-top: -140px;
         .comment-image {
             margin-left: 90px;
-            width: 100px;
-            height: 100px;
         }
         .username-info {
-            margin-left: 220px;
+            margin-left: 130px;
             position: relative;
-            margin-top: -80px;
+            margin-top: -30px;
             .username {
                 display: inline;
             }
@@ -42,20 +43,25 @@
             }
         }
         .comment-content {
-            margin-left: 220px;
+            color: #303030;
+            letter-spacing: 0.2px;
+            word-spacing: 2px;
+            margin-left: 90px;
             width: 750px;
         }
         .comment-tags {
-            margin-left: 220px;
+            margin-left: 80px;
             .colored-tag {
+                font-style: oblique;
                 border: none;
-                background-color: #2e62d3;
+                background-color: #3399ff;
                 color: white;
                 border-radius: 3px;
                 height: 25px;
                 margin-left: 10px;
             }
             .links {
+                letter-spacing: 0.2px;
                 display: inline;
                 margin-left: 20px;
                 .off {
@@ -66,9 +72,55 @@
                 .on {
                     margin-left: 15px;
                     text-decoration: none;
-                    color: #2e62d3;
+                    color: #3399ff;
                 }
             }
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .comments {
+        .current-comment {
+            .comment-image {
+                margin-left: 90px;
+                margin-bottom: -40px;
+            }
+            .username-info {
+                width: auto;
+                margin-right: 10px;
+                margin-left: 150px;
+                margin-top: 0;
+            }
+            .comment-content {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                width: auto;
+                margin-right: 10px;
+                margin-left: 90px;
+            }
+            .comment-tags {
+                width: auto;
+                margin-left: 90px;
+                .colored-tag {
+                    margin: 5px;
+                    margin-left: 0;
+                }
+                .links {
+                    display: block;
+                    margin-left: 0;
+                    .off,
+                    .on {
+                        margin: 5px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablets: */
 }
