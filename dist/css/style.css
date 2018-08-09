@@ -20,7 +20,7 @@
       .comments .vote .vote-down.off {
         color: #d6d4d4; }
   .comments .current-comment {
-    margin-top: -140px; }
+    margin-top: -120px; }
     .comments .current-comment .comment-image {
       margin-left: 90px; }
     .comments .current-comment .username-info {
@@ -28,6 +28,7 @@
       position: relative;
       margin-top: -30px; }
       .comments .current-comment .username-info .username {
+        letter-spacing: 0.2px;
         display: inline; }
       .comments .current-comment .username-info .date {
         color: #a7a6a6;
@@ -41,6 +42,7 @@
     .comments .current-comment .comment-tags {
       margin-left: 80px; }
       .comments .current-comment .comment-tags .colored-tag {
+        letter-spacing: 0.2px;
         font-style: oblique;
         border: none;
         background-color: #3399ff;
@@ -63,33 +65,36 @@
 
 @media only screen and (max-width: 767px) {
   /* For mobile phones: */
-  .comments .current-comment .comment-image {
-    margin-left: 90px;
-    margin-bottom: -40px; }
-  .comments .current-comment .username-info {
-    width: auto;
-    margin-right: 10px;
-    margin-left: 150px;
-    margin-top: 0; }
-  .comments .current-comment .comment-content {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    width: auto;
-    margin-right: 10px;
-    margin-left: 90px; }
-  .comments .current-comment .comment-tags {
-    width: auto;
-    margin-left: 90px; }
-    .comments .current-comment .comment-tags .colored-tag {
-      margin: 5px;
-      margin-left: 0; }
-    .comments .current-comment .comment-tags .links {
-      display: block;
-      margin-left: 0; }
-      .comments .current-comment .comment-tags .links .off,
-      .comments .current-comment .comment-tags .links .on {
+  .comments .current-comment {
+    margin-top: -140px; }
+    .comments .current-comment .comment-image {
+      margin-left: 90px;
+      margin-bottom: -40px; }
+    .comments .current-comment .username-info {
+      width: auto;
+      margin-right: 10px;
+      margin-left: 150px;
+      margin-top: 0; }
+    .comments .current-comment .comment-content {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      width: auto;
+      margin-right: 10px;
+      margin-left: 90px; }
+    .comments .current-comment .comment-tags {
+      width: auto;
+      margin-left: 90px; }
+      .comments .current-comment .comment-tags .colored-tag {
         margin: 5px;
-        margin-left: 0; } }
+        margin-left: 0; }
+      .comments .current-comment .comment-tags .links {
+        margin-top: 5px;
+        display: block;
+        margin-left: 0; }
+        .comments .current-comment .comment-tags .links .off,
+        .comments .current-comment .comment-tags .links .on {
+          margin: 5px;
+          margin-left: 0; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* For tablets: */ }
@@ -104,6 +109,7 @@
     position: relative;
     margin-top: -80px; }
     .admin-section .admin-info .admin-title {
+      letter-spacing: 0.3px;
       display: inline; }
     .admin-section .admin-info .date {
       color: #a7a6a6;
@@ -115,6 +121,7 @@
     margin-top: 20px;
     margin-left: 100px; }
   .admin-section .tags {
+    letter-spacing: 0.2px;
     margin-left: 100px; }
     .admin-section .tags .add-tag {
       font-family: sans-serif;
@@ -169,11 +176,14 @@
       margin-left: 0; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* For tablets: */ }
+  /* For tablets: */
+  .admin-section .comment-area {
+    width: 90%; } }
 
 .order-type {
   margin-top: 20px;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.3px;
+  margin-bottom: 20px; }
   .order-type .off {
     margin: 5px;
     text-decoration: none;
@@ -189,7 +199,7 @@
     visibility: hidden;
     display: none; }
   .order-type .on {
-    margin: 6px; } }
+    margin: 5px; } }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
@@ -199,6 +209,7 @@ body {
   .top-section .comments-div {
     margin-bottom: 30px; }
     .top-section .comments-div .title {
+      letter-spacing: 0.2px;
       display: inline; }
     .top-section .comments-div .colored-counter {
       background-color: #3399ff;
@@ -225,6 +236,7 @@ body {
     /* Stroke */
     /* Fill */ }
     .top-section .social-media .social-media-links .link-socials {
+      letter-spacing: 0.4px;
       text-decoration: none;
       display: inline;
       margin-left: 20px;
@@ -299,7 +311,8 @@ body {
     line-height: 20px;
     padding: 0; }
   .back-to-top .back-title {
-    display: inline; }
+    display: inline;
+    letter-spacing: 0.2px; }
 
 @media only screen and (max-width: 767px) {
   /* For mobile phones: */
