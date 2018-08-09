@@ -26,7 +26,7 @@
         }
     }
     .current-comment {
-        margin-top: -140px;
+        margin-top: -120px;
         .comment-image {
             margin-left: 90px;
         }
@@ -35,6 +35,7 @@
             position: relative;
             margin-top: -30px;
             .username {
+                letter-spacing: 0.2px;
                 display: inline;
             }
             .date {
@@ -52,6 +53,7 @@
         .comment-tags {
             margin-left: 80px;
             .colored-tag {
+                letter-spacing: 0.2px;
                 font-style: oblique;
                 border: none;
                 background-color: #3399ff;
@@ -83,6 +85,7 @@
     /* For mobile phones: */
     .comments {
         .current-comment {
+            margin-top: -140px;
             .comment-image {
                 margin-left: 90px;
                 margin-bottom: -40px;
@@ -108,6 +111,7 @@
                     margin-left: 0;
                 }
                 .links {
+                    margin-top: 5px;
                     display: block;
                     margin-left: 0;
                     .off,

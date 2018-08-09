@@ -7,6 +7,7 @@ body {
     .comments-div {
         margin-bottom: 30px;
         .title {
+            letter-spacing: 0.2px;
             display: inline;
         }
         .colored-counter {
@@ -37,6 +38,7 @@ body {
         border-bottom: 1px solid #ddd;
         .social-media-links {
             .link-socials {
+                letter-spacing: 0.4px;
                 text-decoration: none;
                 display: inline;
                 margin-left: 20px;
@@ -138,6 +140,7 @@ body {
     }
     .back-title {
         display: inline;
+        letter-spacing: 0.2px;
     }
 }
 

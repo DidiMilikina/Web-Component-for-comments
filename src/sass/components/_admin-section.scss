@@ -9,6 +9,7 @@
         position: relative;
         margin-top: -80px;
         .admin-title {
+            letter-spacing: 0.3px;
             display: inline;
         }
         .date {
@@ -23,7 +24,11 @@
         margin-top: 20px;
         margin-left: 100px;
     }
+    .comment-area:active{
+        
+    }
     .tags {
+        letter-spacing: 0.2px;
         margin-left: 100px;
         .add-tag {
             font-family: sans-serif;
@@ -93,4 +98,9 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     /* For tablets: */
+    .admin-section{
+        .comment-area{
+            width: 90%;
+        }
+    }
 }
